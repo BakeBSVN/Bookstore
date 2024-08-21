@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-## Create static
-#mkdir -p /bookstore/static
+# Create static
+mkdir -p ./staticfiles
 
 
 chmod +x ./docker-entrypoint.sh
@@ -11,7 +11,7 @@ chmod +x ./docker-entrypoint.sh
 python manage.py migrate
 
 ## Collect static files
-#python manage.py collectstatic --noinput
+python manage.py collectstatic --noinput
 
 # Run server
 #uwsgi --ini /bookstore/uwsgi.ini
