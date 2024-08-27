@@ -24,21 +24,18 @@ cd Bookstore
 2. Configure Environment Variables
 Create a .env file in the root directory of the project and add the necessary environment variables:
 
-bash
-Copy code
+```bash
 cp .env.example .env
 Edit the .env file according to your environment setup.
 
 3. Build and Run the Containers
 On Linux (Ubuntu)
-bash
-Copy code
+```bash
 sudo docker-compose up --build
 On Windows
 Ensure that your Docker Desktop is running and configured with WSL2 integration. Then run:
 
-bash
-Copy code
+```bash
 docker-compose up --build
 4. Access the Application
 Once the containers are up and running, you can access the Django application at:
